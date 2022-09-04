@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"  content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissor Game | Hosseinzadeh.dev</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="./fonts">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="scores">
+            <p>کامپیوتر : 
+                <span id="computer_score">0</span>
+            </p>
+            <p>
+                شما :
+                <span id="user_score">0</span>
+            </p>
+        </div>
+        <div class="weapons">
+            <button onclick="checker('سنگ')">
+                <i class="far fa-hand-rock"></i>
+            </button>
+            <button onclick="checker('کاغذ')">
+                <i class="far fa-hand-paper"></i>
+            </button>
+            <button onclick="checker('قیچی')">
+                <i class="far fa-hand-scissors"></i>
+            </button>
+        </div>
+        <div class="details">
+            <p id="user_choice"></p>
+            <p id="comp_choice"></p>
+            <p id="result"></p>
+        </div>
+    </div>
+    <div class="footer">
+        <h3>Coded by hosseinzadeh.dev</h3>
+      </div>
+    <script src="script.js"></script>
+</body>
+</html>
